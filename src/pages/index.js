@@ -7,6 +7,8 @@ import HeroSection from '../components/Reuseable/HeroSection'
 import Infoblock from '../components/Reuseable/Infoblock'
 import DualInfoblock from "../components/Reuseable/DualInfoblock"
 import Coursecart from "../components/Cart/Coursecart"
+import Bundles from "../components/Cart/Bundles"
+
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -19,6 +21,7 @@ const IndexPage = ({data}) => (
     />
     <Infoblock heading="About Us" />
     <Coursecart courses={data.courses} />
+    <Bundles bundles={data.bundles} />
     <DualInfoblock 
       heading="Our Team"  
       src="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
@@ -45,6 +48,20 @@ export const query = graphql`
           description{
             description
           }
+          image{
+            fixed(width:200, height:120){
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
+    bundles: allContentfulBundles{
+      edges{
+        node{
+          id
+          title
+          price
           image{
             fixed(width:200, height:120){
               ...GatsbyContentfulFixed_tracedSVG

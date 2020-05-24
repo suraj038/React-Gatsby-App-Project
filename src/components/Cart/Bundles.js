@@ -4,40 +4,15 @@ import Img from 'gatsby-image'
 
 
 
-const getCaty = items => {
-    let holdItems = items.map(items => {
-        return items.node.category
-    })
-    let holdCategories = new Set(holdItems)
-    let categories = Array.from(holdCategories)
-    categories = ["all", ...categories]
-    return categories
-}
-
-export default class Coursecart extends Component {
+export default class Bundles extends Component {
     constructor(props) {
         super(props)
         this.state= {
-            courses: props.courses.edges,
-            mycourses: props.courses.edges,
-            mycategories: getCaty(props.courses.edges)
+            bundles: props.bundles.edges,
+            mybundles: props.bundles.edges,
         }
     }
 
-    catyClicked = category => {
-        let keepitsafe = [...this.state.courses]
-
-        if (category === "all") {
-            this.setState(() => {
-                return { mycourses: keepitsafe}
-            })
-        } else {
-            let holdme = keepitsafe.filter(({ node }) => node.category === category)
-            this.setState(() => {
-                return { mycourses: holdme}
-            })
-        }
-    }
 
     render() {
         // console.log(this.state.courses);
@@ -45,30 +20,10 @@ export default class Coursecart extends Component {
         return (
             <section className="py-5 px-5">
                 <div className="conatiner">
-                    <Heading title="Courses" />
-                    <div className="row my-2">
-                        <div className="col-10 mx-auto text-center">
-                            {
-                                this.state.mycategories.map((category, index) => {
-                                    return (
-                                        <button
-                                            type="button"
-                                            className="btn btn-info m-2 px-5"
-                                            key={index}
-                                            onClick={() => {
-                                                this.catyClicked(category)
-                                            }}
-                                        >
-                                            {category}
-                                        </button>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
+                    <Heading title="Bundles" />
                     <div className="row mx-auto">
                         {
-                            this.state.mycourses.map(({node}) => {
+                            this.state.mybundles.map(({node}) => {
                                 return(
                                     <div key={node.id} className="col-11 col-md-6 my-3 d-flex">
                                         <Img fixed={node.image.fixed} />
@@ -78,7 +33,7 @@ export default class Coursecart extends Component {
                                                 <h6 className="mb-0 text-success ml-4">$ {node.price}</h6>
                                             </div>
                                             <p className="text-muted">
-                                                <small>{node.description.description}</small>
+                                                <small>Frontend + Backend Bundle Course</small>
                                             </p>
                                             <button 
                                                 data-item-id={node.id}
