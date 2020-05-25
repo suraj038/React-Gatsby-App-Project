@@ -20,7 +20,7 @@ export default class Bundles extends Component {
         return (
             <section className="py-5 px-5">
                 <div className="conatiner">
-                    <Heading title="Bundles" />
+                    <Heading title="Bundles" className=""/>
                     <div className="row mx-auto">
                         {
                             this.state.mybundles.map(({node}) => {

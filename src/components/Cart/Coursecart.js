@@ -43,7 +43,7 @@ export default class Coursecart extends Component {
         // console.log(this.state.courses);
         
         return (
-            <section className="py-5 px-5">
+            <section className="py-5">
                 <div className="conatiner">
                     <Heading title="Courses" />
                     <div className="row my-2">
