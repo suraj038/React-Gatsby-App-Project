@@ -18,7 +18,7 @@ export default class Bundles extends Component {
         // console.log(this.state.courses);
         
         return (
-            <section className="py-5 px-5">
+            <section className="py-5">
                 <div className="conatiner">
                     <Heading title="Bundles" className=""/>
                     <div className="row mx-auto">
