@@ -43,10 +43,10 @@ export default class Coursecart extends Component {
         // console.log(this.state.courses);
         
         return (
-            <section className="py-5">
-                <div className="conatiner">
-                    <Heading title="Courses" />
-                    <div className="row my-2">
+            <section className="py-5 bg-dark">
+                <div className="conatiner text-white">
+                    <Heading title="COURSES" />
+                    <div className="row my-2 bg-white">
                         <div className="col-10 mx-auto text-center">
                             {
                                 this.state.mycategories.map((category, index) => {
@@ -74,10 +74,10 @@ export default class Coursecart extends Component {
                                         <Img fixed={node.image.fixed} />
                                         <div className="flex-grow-1 px-2">
                                             <div className="d-flex">
-                                                <h6 className="mb-0">{node.title}</h6>
+                                                <h6 className="mb-0 text-white">{node.title}</h6>
                                                 <h6 className="mb-0 text-success ml-4">$ {node.price}</h6>
                                             </div>
-                                            <p className="text-muted">
+                                            <p className="text-white">
                                                 <small>{node.description.description}</small>
                                             </p>
                                             <button 

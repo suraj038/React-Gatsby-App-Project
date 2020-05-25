@@ -22,3 +22,173 @@
 .btn-warning {
   padding: 8px 35px;
 }
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.gap {
+  margin-top: 100px
+}
+
+button.btn-extra,
+a.button.btn-extra,
+input[type="button"].button.btn-extra {
+  font-size: 1em;
+  height: 70px;
+  padding: 0;
+  text-transform: uppercase;
+  background: transparent;
+  color: #fff;
+  line-height: 1.5em;
+  border: 1px solid #01b7f2;
+  border-left: none;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0;
+  display: inline-table;
+  table-layout: fixed;
+  margin-right: 10px;
+  margin-bottom: 10px
+}
+
+button.btn-extra>i,
+a.button.btn-extra>i,
+input[type="button"].button.btn-extra>i {
+  width: 55px;
+  vertical-align: middle;
+  background: #01b7f2;
+  color: #2d3e52;
+  font-size: 36px;
+  display: table-cell;
+  height: 70px;
+  text-align: right;
+  padding-right: 8px
+}
+
+button.btn-extra>i:after,
+a.button.btn-extra>i:after,
+input[type="button"].button.btn-extra>i:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 55px;
+  border-bottom: 70px solid #01b7f2;
+  border-right: 16px solid transparent;
+  top: 0;
+  bottom: 0
+}
+
+button.btn-extra>span,
+a.button.btn-extra>span,
+input[type="button"].button.btn-extra>span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px 0 35px;
+  text-align: left
+}
+
+button.btn-extra>span em,
+a.button.btn-extra>span em,
+input[type="button"].button.btn-extra>span em {
+  color: #01b7f2;
+  font-size: 1.6667em;
+  font-weight: bold;
+  font-style: normal
+}
+
+button.btn-extra:hover,
+a.button.btn-extra:hover,
+input[type="button"].button.btn-extra:hover {
+  color: inherit;
+  background: #fff;
+  border: none;
+  border-right: 1px solid transparent !important
+}
+
+button.btn-extra:hover>i,
+a.button.btn-extra:hover>i,
+input[type="button"].button.btn-extra:hover>i {
+  color: #fff
+}
+
+button.btn-extra.blue,
+a.button.btn-extra.blue,
+input[type="button"].button.btn-extra.blue {
+  border-color: #01b7f2
+}
+
+button.btn-extra.blue>i,
+a.button.btn-extra.blue>i,
+input[type="button"].button.btn-extra.blue>i {
+  background: #01b7f2
+}
+
+button.btn-extra.blue>i:after,
+a.button.btn-extra.blue>i:after,
+input[type="button"].button.btn-extra.blue>i:after {
+  border-bottom-color: #01b7f2
+}
+
+button.btn-extra.blue>span em,
+a.button.btn-extra.blue>span em,
+input[type="button"].button.btn-extra.blue>span em {
+  color: #01b7f2
+}
+
+button.btn-extra.yellow,
+a.button.btn-extra.yellow,
+input[type="button"].button.btn-extra.yellow {
+  border-color: #fdb714
+}
+
+button.btn-extra.yellow>i,
+a.button.btn-extra.yellow>i,
+input[type="button"].button.btn-extra.yellow>i {
+  background: #fdb714
+}
+
+button.btn-extra.yellow>i:after,
+a.button.btn-extra.yellow>i:after,
+input[type="button"].button.btn-extra.yellow>i:after {
+  border-bottom-color: #fdb714
+}
+
+button.btn-extra.yellow>span em,
+a.button.btn-extra.yellow>span em,
+input[type="button"].button.btn-extra.yellow>span em {
+  color: #fdb714
+}
+
+
+

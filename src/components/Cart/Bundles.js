@@ -18,9 +18,11 @@ export default class Bundles extends Component {
         // console.log(this.state.courses);
         
         return (
-            <section className="py-5">
-                <div className="conatiner">
-                    <Heading title="Bundles" className=""/>
+            <section className="py-5 bg-dark">
+            <div className="row my-2 bg-white text-white" >.</div>
+
+                <div className="conatiner text-white">
+                    <Heading title="BUNDLES" className=""/>
                     <div className="row mx-auto">
                         {
                             this.state.mybundles.map(({node}) => {
@@ -32,8 +34,8 @@ export default class Bundles extends Component {
                                                 <h6 className="mb-0">{node.title}</h6>
                                                 <h6 className="mb-0 text-success ml-4">$ {node.price}</h6>
                                             </div>
-                                            <p className="text-muted">
-                                                <small>Frontend + Backend Bundle Course</small>
+                                            <p className="text-white">
+                                                <small>Frontend + Backend Bundle</small>
                                             </p>
                                             <button 
                                                 data-item-id={node.id}
