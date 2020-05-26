@@ -117,6 +117,128 @@ export default function DualInfoblock({heading}) {
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="row my-4 bg-white text-white" >.</div>
+<h4 className="text-center text-dark">TAKE A LOOK</h4>
+<h1 className="text-center text-white">Frequently Asked Questions</h1>
+<h6 className="text-center text-dark">Some of the most common questions are answered here but don't hesitate to reach us out.</h6>
+<div class="container py-3">
+    <div class="row">
+        <div class="col-16">
+        <img src="https://web.learncodeonline.in/static/media/faq-img-1.07207d3a.png" class="float-right left-0 " alt></img>
+
+            <div class="accordion" id="faqExample">
+                <br></br>
+                <br></br>
+                <div class="card">
+                    <div class="card-header bg-dark p-2" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Q: How can i reach you?
+                            </button>
+                          </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div class="card-body">
+                            <b>Answer:</b> If you are reaching out for a technical problem related to course, please post that in course discussion section only. Otherwise we are reachable at team@learncodeonline.in<br></br> We are also reachable at Instagram and Youtube Live on Saturday
+                        </div>
+                    </div>
+                </div><div><h6 className="my-6"></h6></div>
+                <div class="card">
+                    <div class="card-header bg-dark p-2" id="headingTwo">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Q: Do you teach offline also?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                        <div class="card-body">
+                        Yes, we do teach offline too. We are very concern about quality that's why we run limited batches in a year with very strict and limited intakes.
+
+                        </div>
+                    </div>
+                </div><div><h6 className="my-6"></h6></div>
+                <div class="card">
+                    <div class="card-header bg-dark p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. How can i invite you at our campus?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                            We would love to be at your campus. But due to high volume of invitation, let us know in advance.
+                        </div>
+                    </div>
+                </div><div><h6 className="my-6"></h6></div>
+                <div class="card">
+                    <div class="card-header bg-dark p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. Do you sponsor events too?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                            Yes, we do that. For this you need to write an email at team@learncodeonline.in <br></br> Our team will get back to you
+                        </div>
+                    </div>
+                </div><div><h6 className="my-6"></h6></div>
+                <div class="card">
+                    <div class="card-header bg-dark p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Q. Where can i reach out for payment related issues?
+                            </button>
+                          </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                            First, it is very rare to have payment related issues but still if you face some errors, let me tell you that your payment is totally safe. We are on auto refund , if payment don't reach to us.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 </section>
 
 

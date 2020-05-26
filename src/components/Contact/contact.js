@@ -25,6 +25,29 @@ export default function Contact() {
                     <button type="submit" className="btn btn-outline-info btn-block">Submit</button>
                 </form>
             </div>
-        </section>
+
+<br></br>
+<br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
     )
 }

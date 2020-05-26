@@ -4,25 +4,27 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from '../components/Reuseable/HeroSection'
-import Contact from '../components/Contact/contact'
+import Services from "../components/Services/services"
 
 
-const ContactPage = ({data}) => (
+const ServicePage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection
       img={data.img.childImageSharp.fluid}
-      title="Contact Us"
+      title="SERVICES"
       subtitle=""
       heroclass="about-background"
     />
-    <Contact />
+    <div className="row my-1 bg-white text-white" >.</div>
+    <Services />
+    <div className="row my-1 bg-white text-white" >.</div>
   </Layout>
 )
 
 export const query = graphql`
 {
-  img: file(relativePath: { eq: "contact.png" }) {
+  img: file(relativePath: { eq: "heromain.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -32,4 +34,4 @@ export const query = graphql`
 }
 `
 
-export default ContactPage
+export default ServicePage
